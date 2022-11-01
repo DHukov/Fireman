@@ -9,6 +9,10 @@ public class Temperature_Changer : MonoBehaviour
     public float current_termometr_temperature; 
     bool no_touch;
     int i;
+    public void Temp(float newtemp)
+    {
+        current_termometr_temperature = newtemp;
+    }
 
     public void Update()
     {

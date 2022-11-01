@@ -3,16 +3,16 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
 
-public class GetScore : MonoBehaviour
+public class GetPowder : MonoBehaviour
 {
     [SerializeField]
-    Temperature_Changer tempo;
+    Fire_Extinguishing RemainingTime;
     [SerializeField]
     private TextMeshProUGUI localText;
 
     void Update()
     {
-        localText.text = tempo.current_termometr_temperature.ToString();
+        localText.text = Mathf.Round(RemainingTime.secondsForUse).ToString();
 
     }
 }
